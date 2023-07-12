@@ -9,6 +9,8 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/streamlit_extras-{{ version }}.tar.gz
   sha256: 52a8cb3a4394735ee873c92c95fabf56d84cc2400ed0617bbc8b8259c0560276
   patches:
+    # entrypoints is a package in maintenance mode that seems to be implicitly used by streamlit-extras. It seems to be 
+    # not really needed. Rather than adding entrypoints to the runtime dependencies, it was decided to remove it from the implementation.
     - patches/0001-remove-the-usage-of-entrypoints.patch
 
 build:
