@@ -1,0 +1,42 @@
+diff --git a/src/streamlit_extras/altex/__init__.py b/src/streamlit_extras/altex/__init__.py
+index f6fd95d..8b8e09f 100644
+--- a/src/streamlit_extras/altex/__init__.py
++++ b/src/streamlit_extras/altex/__init__.py
+@@ -2,7 +2,6 @@ from functools import partial
+ from typing import Optional, Union
+
+ import altair as alt
+-import entrypoints
+ import numpy as np
+ import pandas as pd
+ import streamlit as st
+@@ -171,7 +170,7 @@ def _chart(
+
+     try:
+         alt.themes.enable("streamlit")
+-    except entrypoints.NoSuchEntryPoint:
++    except:
+         st.altair_chart = partial(st.altair_chart, theme="streamlit")
+
+     x_ = _get_shorthand(x)
+diff --git a/src/streamlit_extras/chart_annotations/__init__.py b/src/streamlit_extras/chart_annotations/__init__.py
+index 1edf4ff..fb3374f 100644
+--- a/src/streamlit_extras/chart_annotations/__init__.py
++++ b/src/streamlit_extras/chart_annotations/__init__.py
+@@ -4,7 +4,6 @@ from functools import partial
+ from typing import Iterable, Tuple
+
+ import altair as alt
+-import entrypoints
+ import pandas as pd
+ import streamlit as st
+
+@@ -17,7 +16,7 @@ from .. import extra
+
+ try:
+     alt.themes.enable("streamlit")
+-except entrypoints.NoSuchEntryPoint:
++except:
+     st.altair_chart = partial(st.altair_chart, theme="streamlit")
+
+
