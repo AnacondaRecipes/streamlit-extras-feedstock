@@ -13,7 +13,7 @@ build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
   # s390x is missing streamlit
-  skip: true  # [py<11 or s390x]
+  skip: true  # [py<38 or s390x]
 
 
 requirements:
