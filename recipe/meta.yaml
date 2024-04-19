@@ -52,7 +52,7 @@ test:
 about:
   home: https://share.streamlit.io/
   dev_url: https://github.com/arnaudmiribel/streamlit-extras
-  doc_url: https://share.streamlit.io/
+  doc_url:  https://github.com/arnaudmiribel/streamlit-extras
   summary: A library to discover, try, install and share Streamlit extras
   description: |
     streamlit-extras is a Python library putting together useful Streamlit bits of code (extras).
