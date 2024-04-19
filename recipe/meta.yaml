@@ -48,14 +48,22 @@ requirements:
     - markdownlit >=0.0.5
     - streamlit-image-coordinates >=0.1.1,<1.0.0
     - prometheus_client >=0.14.0
+    # upstream forgot to add validators to streamlit-extra 0.4.0, but require validators 0.22.0 for tests. 
+    # Test pass with  validators 0.18.2
+    - validators
 
 test:
+  source_files:
+    - tests
   imports:
     - streamlit_extras
   commands:
     - pip check
+    - pytest -v tests
   requires:
     - pip
+    - pytest
+    - pandas
 
 about:
   home: https://share.streamlit.io/
