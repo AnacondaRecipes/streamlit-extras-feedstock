@@ -6,7 +6,6 @@ package:
   version: {{ version }}
 
 source:
-  #url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/streamlit_extras-{{ version }}.tar.gz
   url: https://github.com/arnaudmiribel/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
   sha256: d6e863ab86d251bfb8ffc2abcfcd0fc99583fdc0ba00f4936db51fa0a23766d5
   patches:
@@ -48,8 +47,8 @@ requirements:
     - markdownlit >=0.0.5
     - streamlit-image-coordinates >=0.1.1,<1.0.0
     - prometheus_client >=0.14.0
-    # upstream forgot to add validators to streamlit-extra 0.4.0, but require validators 0.22.0 for tests. 
-    # Test pass with  validators 0.18.2
+    # upstream forgot to add validators to streamlit-extra 0.4.0, but require validators 0.22.0 for tests.
+    # Test pass with validators 0.18.2
     - validators
 
 test:
