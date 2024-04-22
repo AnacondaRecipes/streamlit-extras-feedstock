@@ -31,6 +31,9 @@ requirements:
     - wheel
   run:
     - python !=3.9.7
+    # Only to make conda-build happy... Without this it's not able to see that the package has
+    # to be built for all python versions.
+    - python
     - entrypoints >=0.4
     - streamlit >=1.0.0
     - st-annotated-text >=3.0.0
@@ -67,7 +70,7 @@ test:
 about:
   home: https://share.streamlit.io/
   dev_url: https://github.com/arnaudmiribel/streamlit-extras
-  doc_url:  https://github.com/arnaudmiribel/streamlit-extras
+  doc_url: https://github.com/arnaudmiribel/streamlit-extras
   summary: A library to discover, try, install and share Streamlit extras
   description: |
     streamlit-extras is a Python library putting together useful Streamlit bits of code (extras).
