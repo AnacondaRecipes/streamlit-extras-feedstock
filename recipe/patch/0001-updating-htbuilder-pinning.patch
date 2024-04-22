@@ -1,0 +1,25 @@
+From 909f037240be3c93c38072782bd669c643062b96 Mon Sep 17 00:00:00 2001
+From: Udo-Peter Steyer <psteyer@anaconda.com>
+Date: Fri, 19 Apr 2024 15:28:52 -0500
+Subject: [PATCH] updating htbuilder pinning
+Temporarily diverging from upstream to fix a conflict that happens in a circular dependency.
+---
+ pyproject.toml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/pyproject.toml b/pyproject.toml
+index d65894e..cca8cf8 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -26,7 +26,7 @@ protobuf = "!=3.20.2"
+ streamlit-camera-input-live = ">=0.2.0"
+ streamlit-vertical-slider = ">=2.5.5"
+ streamlit-toggle-switch = ">=1.0.2"
+-htbuilder = ">=0.6.2"
++htbuilder = ">=0.6.1"
+ streamlit-faker = ">=0.0.2"
+ streamlit-card = ">=0.0.4"
+ markdownlit = ">=0.0.5"
+-- 
+2.39.3 (Apple Git-145)
+
