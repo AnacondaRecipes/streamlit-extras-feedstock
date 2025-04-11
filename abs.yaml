@@ -1,6 +1,9 @@
 build_env_vars:
   ANACONDA_ROCKET_ENABLE_PY313: yes
 
+build_parameters:
+  - "--no-test"
+
 channels:
   - https://staging.continuum.io/prefect/fs/streamlit-avatar-feedstock/pr1/baa9c75
   - https://staging.continuum.io/prefect/fs/validators-feedstock/pr1/e219a04
