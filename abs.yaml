@@ -4,3 +4,6 @@ build_env_vars:
 channels:
   - https://staging.continuum.io/prefect/fs/streamlit-avatar-feedstock/pr1/baa9c75
   - https://staging.continuum.io/prefect/fs/validators-feedstock/pr1/e219a04
+  - https://staging.continuum.io/prefect/fs/streamlit-faker-feedstock/pr2/6e37e67
+  - https://staging.continuum.io/prefect/fs/markdownlit-feedstock/pr2/578165f
+  - https://staging.continuum.io/prefect/fs/st-theme-feedstock/pr2/d85a6e2
