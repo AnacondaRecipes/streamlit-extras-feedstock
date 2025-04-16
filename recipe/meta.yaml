@@ -24,8 +24,6 @@ requirements:
     - pip
     - python
     - poetry-core
-    - setuptools
-    - wheel
   run:
     - python
     - streamlit >=1.0.0
