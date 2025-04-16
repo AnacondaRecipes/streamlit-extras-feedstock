@@ -74,7 +74,7 @@ about:
   license_file: LICENSE
   description: streamlit-extras is a Python library putting together useful Streamlit bits of code (extras).
   dev_url: https://github.com/arnaudmiribel/streamlit-extras
-  doc_url: https://arnaudmiribel.github.io/streamlit-extras/  
+  doc_url: https://arnaudmiribel.github.io/streamlit-extras
 
 extra:
   recipe-maintainers:
