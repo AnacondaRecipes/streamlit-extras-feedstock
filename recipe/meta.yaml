@@ -17,16 +17,13 @@ build:
   skip: true  # [py<39 or py>=314]
 
 requirements:
-  build:
-    - patch  # [not win]
-    - m2-patch  # [win]
   host:
     - pip
     - python
-    - poetry-core
     - hatchling
   run:
     - python
+    - altex >=0.2.0
     - streamlit >=1.37.0,<1.40.0
     - prometheus_client >=0.20.0
     - st-annotated-text >=4.0.1
